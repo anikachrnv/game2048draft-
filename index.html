@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uk">
+ <head>
+     <meta charset="UTF-8">
+     <title>Міні-гра 2048</title>
+     <link rel="stylesheet" href="styles.css">
+     <link rel="icon" href="4_ico.ico" type="images/x-icon">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap">
+     
+ </head>
+ <body>
+     <header>
+         <nav>
+             <div><a href="#h1.1">Про мене</a></div>
+             <div><a href="#h1.2">Правила</a></div>
+             <div><a href="#h1.3">Гра 2048</a></div>
+             <div><a href="#h2">Галерея</a></div>
+             <div><a href="#h3">Зв'язок</a></div>
+         </nav>
+     </header>
+     <main>
+         <div class="content" style="height:50px;"></div>
+         <h1 id="h1.1">Про мене</h1>
+         <p>Привіт! Я Аня, мені 18, а це мої спроби у IT... Я навчаюся на курсі Front-end від 
+         <a href="https://prometheus.org.ua/">Prometheus</a>.</p>
+         <p>Раніше я ніколи цим не займалася, цей сайт — мої результати за 2 тижні навчання.</p>
+       
+         <h1 id="h1.2">Правила гри 2048</h1>
+         <p>Об'єднуйте плитки з однаковою потужністю 2, щоб отримати загальну суму.</p>
+         <p>Мета полягає в тому, щоб продовжувати об'єднувати плитки таким чином, поки не досягнете 2048!</p>
+         <h1 id="h1.3">Гра 2048</h1>
+         <div class="game-board"></div>
+         <aside>
+             <form action="https://play2048.co/" method="get">
+             <button type="submit">Грати зараз!</button>
+             </form>
+         </aside>
+         <h2 id="h2">Галерея</h2>
+         <div>
+             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/2048_Screenshot.png/260px-2048_Screenshot.png" 
+             width="260" height="260" alt="Демонстрація гри" title="Демонстрація гри">
+             <img src="https://cache.marieclaire.fr/data/photo/w512_c17/3z/2048.jpg"
+             width="260" height="260" alt="Демонстрація гри" title="Демонстрація гри"> 
+             <img src="https://upload.wikimedia.org/wikipedia/commons/d/dd/2048_game_with_8192_tile.png"
+             width="260" height="260" alt="Демонстрація гри" title="Демонстрація гри">
+             <img src="https://www.researchgate.net/publication/324690855/figure/fig1/AS:618423763607552@1524455123661/A-state-in-the-game-2048-in-which-a-tile-of-value-8192-has-been-reached.png"
+             width="260" height="260" alt="Демонстрація гри" title="Демонстрація гри">
+         </div>
+     </main>
+     <footer>
+         <h3 id="h3">Форма зворотнього зв'язку</h3>
+         <form action="https://formspree.io/f/mayrdooz" method="post">
+             <div>
+                 <label for="name">Ім'я:</label><br>
+                 <input type="text" id="name" name="name_user"
+                 pattern="[А-Яа-яёЁіІїЇєЄґҐ]*" title="Тільки літери">
+             </div>
+             <div>
+                 <label for="email">Email:</label><br>
+                 <input type="email" id="email" name="email_user">
+             </div>
+             <div>
+                 <label for="summary">Повідомлення:</label><br>
+                 <input type="text" id="summary" name="summary_user">
+             </div>
+             <div>
+                 <p><button type="submit">Підтвердити</button></p>
+             </div>
+        </form>
+     </footer>
+ </body>
+</html>
